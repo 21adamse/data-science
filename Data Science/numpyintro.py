@@ -25,6 +25,27 @@ for array in arrays:
     print("memory (bytes)-",array.nbytes)
     print("-"*100)
 
-newarray = np.arange(1,25)
-for i in range(len(newarray)):
-    if len(newarray) // 2
+#creating a random array
+randomarray = np.random.randint(1,50,20)
+print(randomarray)
+print(randomarray.max())
+print(randomarray.min())
+print(np.sort(randomarray))
+print(np.sort(randomarray)[::-1])
+reshapearray = randomarray.reshape(5,4)
+print(reshapearray)
+
+#rowise sorting
+print(np.sort(reshapearray,axis=1))
+
+#collumnwise sorting
+print(np.sort(reshapearray,axis=0))
+
+
+
+
+"""newarray = np.arange(1,25)
+for i in range(1,len(newarray)):
+    for j in range(1,len(newarray)):
+        if i // j == 0 and i*j == len(newarray):
+            print(newarray.reshape(i,j))"""
